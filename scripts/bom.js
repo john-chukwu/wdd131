@@ -3,23 +3,50 @@ const input = document.querySelector("#favchap");
 const button = document.querySelector("button");
 const list = document.querySelector("ul");
 
-// Create a list item
-const li = document.createElement("li");
+// Add a click event listener to the button
+button.addEventListener("click", function () {
 
-// Create a delete button
-const deleteButton = document.createElement("button");
+    // Check that the input is not blank
+    if (input.value.trim() !== "") {
 
-// Add the input value to the list item
-li.textContent = input.value;
+        // Create a list item
+        const li = document.createElement("li");
 
-// Set the delete button text
-deleteButton.textContent = "❌";
+        // Create a delete button
+        const deleteButton = document.createElement("button");
 
-// Add an accessibility label
-deleteButton.setAttribute("aria-label", "Remove chapter");
+        // Set the chapter text
+        li.textContent = input.value;
 
-// Append the delete button to the list item
-li.append(deleteButton);
+        // Set the delete button text
+        deleteButton.textContent = "❌";
 
-// Append the list item to the unordered list
-list.append(li);
+        // Accessibility label
+        deleteButton.setAttribute(
+            "aria-label",
+            `Remove ${input.value}`
+        );
+
+        // Add the delete button to the list item
+        li.append(deleteButton);
+
+        // Add the list item to the list
+        list.append(li);
+
+        // Delete the chapter when the X is clicked
+        deleteButton.addEventListener("click", function () {
+            list.removeChild(li);
+            input.focus();
+        });
+
+        // Clear the input field
+        input.value = "";
+
+        // Return the cursor to the input
+        input.focus();
+    } else {
+
+        // Keep the cursor in the input if nothing was entered
+        input.focus();
+    }
+});
