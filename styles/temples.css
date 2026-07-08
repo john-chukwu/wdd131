@@ -18,7 +18,7 @@ header {
 
 .header-container {
     display: flex;
-]    justify-content: space-between;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -42,13 +42,17 @@ header h2 {
     content: "✖";
 }
 
-.navigation {
-    display: none;
+nav.navigation {
+    display: flex;
     flex-direction: column;
     margin-top: 1rem;
 }
 
-.navigation.open {
+nav.navigation:not(.open) {
+    display: none;
+}
+
+nav.navigation.open {
     display: flex;
 }
 
