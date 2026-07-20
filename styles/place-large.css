@@ -1,0 +1,85 @@
+/* ==========================================
+   WDD 131 - Place Page
+   Desktop Layout
+========================================== */
+
+@media screen and (min-width:768px) {
+
+    /* Hero */
+
+    .hero {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .hero picture,
+    .hero img {
+        display: block;
+        width: 100%;
+    }
+
+    .hero img {
+        height: 700px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    /* Overlay Cards */
+
+    .data,
+    .weather {
+        position: absolute;
+        width: 300px;
+        padding: 1.5rem;
+        background: rgba(255, 255, 255, .90);
+        backdrop-filter: blur(3px);
+        border-radius: 12px;
+        box-shadow: 0 10px 24px rgba(0, 0, 0, .25);
+        z-index: 2;
+    }
+
+    /* Data Card */
+
+    .data {
+        top: 25px;
+        left: 25px;
+    }
+
+    /* Weather Card */
+
+    .weather {
+        right: 25px;
+        bottom: 25px;
+    }
+
+    /* Headings */
+
+    .data h2,
+    .weather h2 {
+        display: inline-block;
+        text-align: left;
+        padding-bottom: .35rem;
+        margin-bottom: 1rem;
+        border-bottom: 3px solid var(--primary-color);
+    }
+
+    /* Hide SVG on desktop */
+
+    .weather-icon {
+        display: none;
+    }
+
+    /* Assignment requirement */
+
+    .weather h2::after {
+        content: " ⛅";
+        font-size: 1.4rem;
+        margin-left: .4rem;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+
+}

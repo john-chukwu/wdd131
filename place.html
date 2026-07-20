@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nigeria | WDD 131 Country Page</title>
+
+    <meta name="description" content="WDD 131 Country Page assignment featuring Nigeria.">
+    <meta name="author" content="John Chukwu">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Nigeria</h1>
+
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <picture>
+
+                <source media="(min-width:768px)" srcset="images/nigeria-large.webp">
+
+                <img src="images/nigeria-small.webp" alt="Beautiful scenery in Nigeria" width="1200" height="700">
+
+            </picture>
+
+        </section>
+
+
+
+        <section class="data">
+
+            <h2>Data</h2>
+
+            <div class="info">
+
+                <p><strong>Area:</strong> 923,768 km²</p>
+
+                <p><strong>Population:</strong> 223 Million</p>
+
+                <p><strong>Capital:</strong> Abuja</p>
+
+                <p><strong>Official Language:</strong> English</p>
+
+                <p><strong>Major Languages:</strong> Hausa, Igbo, Yoruba</p>
+
+                <p><strong>Currency:</strong> Nigerian Naira (₦)</p>
+
+                <p><strong>Time Zone:</strong> UTC +1</p>
+
+                <p><strong>Calling Code:</strong> +234</p>
+
+                <p><strong>Internet TLD:</strong> .ng</p>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="weather">
+
+            <h2>Weather</h2>
+
+            <img class="weather-icon" src="images/weather.svg" alt="Weather Icon" width="80" height="80">
+
+            <p>
+
+                <strong>Temperature:</strong>
+
+                <span id="temperature">8</span>°C
+
+            </p>
+
+            <p>
+
+                <strong>Conditions:</strong>
+
+                Partly Cloudy
+
+            </p>
+
+            <p>
+
+                <strong>Wind:</strong>
+
+                <span id="windspeed">12</span> km/h
+
+            </p>
+
+            <p>
+
+                <strong>Wind Chill:</strong>
+
+                <span id="windchill"></span>
+
+            </p>
+
+        </section>
+
+    </main>
+
+
+
+    <footer>
+
+        <p>
+
+            &copy;
+
+            <span id="currentyear"></span>
+
+            John Chukwu | Nigeria
+
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+
+</html>
