@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Review Submitted | WDD 131</title>
+
+    <meta name="description"
+        content="Confirmation page displayed after submitting a product review for the WDD 131 assignment.">
+
+    <meta name="author" content="John Chukwu">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/review.css">
+
+    <script src="scripts/review.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Review Submitted</h1>
+    </header>
+
+    <main>
+
+        <section class="confirmation">
+
+            <h2>Thank You!</h2>
+
+            <p>
+                Your product review has been submitted successfully.
+            </p>
+
+            <p>
+                We appreciate your feedback.
+            </p>
+
+            <p class="counter">
+
+                Reviews Submitted:
+
+                <strong>
+                    <span id="reviewCount">0</span>
+                </strong>
+
+            </p>
+
+            <a href="form.html" class="button">
+                Submit Another Review
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            🌸 John Chukwu 🌸 Nigeria
+        </p>
+
+        <p>
+            Last Modified:
+            <span id="lastModified"></span>
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
