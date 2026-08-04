@@ -1,0 +1,36 @@
+@media (min-width: 768px) {
+
+    #menu {
+        display: none;
+    }
+
+    .header-container {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        width: auto;
+        margin-top: 0;
+        gap: 2rem;
+    }
+
+    .hero {
+        grid-template-columns: minmax(340px, 430px) 1fr;
+        gap: 3rem;
+    }
+
+    .hero img {
+        max-width: 100%;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+}
